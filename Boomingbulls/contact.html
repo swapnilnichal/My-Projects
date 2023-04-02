@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.html">
+    <title>contact</title>
+    <style>
+        *{
+            box-sizing:border-box;
+            cen
+        }
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+         .container{
+            background-color: #f1f1f1;
+            overflow: hidden;
+            
+        }
+        .forlogo{
+            padding-left: 50px;
+            float: left;
+        }
+        .forlogo img{
+            height: 100px; width: 100px;
+        }
+        .mainhead{
+           float:right;
+        }
+        .mainhead h1{
+            margin: 2px -7px;
+            padding-top: 40px;padding-bottom: 10px;
+            text-align:left;
+            font-size: 30px;
+        }
+        .mainhead a{
+            text-decoration: none;
+            color: black;
+        }
+        .mainhead a:hover{
+            color:blueviolet;
+        }
+        .mainbody{
+            min-height: 250px; width: 100vw;
+            background-image: -webkit-linear-gradient(180deg,#d15c38 0%,#d33 100%) !important;
+            background-size: cover;
+            border:1px solid tomato;
+            display: flex;
+            flex-wrap: nowrap;
+             position: relative;
+            justify-content: center;
+        }
+        .mainbody-wrap { position: relative; padding-top: auto; }
+        .mainbody h2{
+            color: white;
+            font-family: "Nunito",sans-serif;
+            font-size: 36px;
+            text-decoration: none;
+            text-align: center;
+            margin-bottom: 0%; margin-top: 100px;
+            /* padding-top: 30px;padding-bottom: 30px; */
+        }
+        .mainbody p {
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            margin-top: 8px;
+        }
+        .mainbody a { text-decoration: none; color: white; }
+
+        .main-container {
+            width: 100%;
+            height: 900px;
+            background-color:white;
+            margin-top: 0%; margin-bottom: 20px;
+        }
+        .main-row{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        position: relative;
+        justify-content: center;
+        }
+        .contact_container{
+            position: relative;
+            width:600px;height: 800px;
+            /* padding-left: 160px; */
+            /* padding-top: 100px; */
+        }
+
+        .form-container{
+            position: relative;
+            width: 600px;height: 800px;
+            /* padding-left: 50px;padding-right: 50px; */
+            /* padding-top: 100px; */
+        }
+        .dabba{
+            background-image: url(https://themes.envytheme.com/ecademy/wp-content/uploads/2020/05/register-shape.jpg);
+            padding: 30px;
+            height: 500px;
+            border-radius: 10px;
+        }
+       .contact_container a{
+         text-decoration: none;
+         font-weight: 700;
+         color: tomato;
+        }
+        .contact_container a:hover{
+            cursor: pointer;
+        }
+        .contact_container img:hover{
+            background-color: lightgray;
+        }
+        #con_det{
+            color: tomato;
+            font-weight: bold;
+            font-size: 20px;
+            padding-left: 25px;
+        }
+        .contact_container h2{
+            padding-left: 25px;
+        }
+        #conpar{
+            padding-left: 25px;
+            font-size: 18px;
+        }
+
+        .address{
+            float: left;
+        }
+        .address img{
+           height: 110px; width: 110px;
+           
+        }
+        .add_detail{
+            padding-left: 25px;
+            float: right;
+            text-align: left;      
+        }
+        .add_detail p{
+          font-weight:500;
+        } 
+
+        .E-mail{
+            float: left;
+        }   
+        .E-Mail img{
+           height: 110px; width: 110px;
+           
+        }
+        .E-Mail_detail{
+            padding-left: 0px; padding-right:155px;
+            /* padding-top:10px;padding-bottom: 5px;  */
+            float: right;
+            text-align: left;     
+        }
+
+        .contact{
+            float: left;
+        }
+        .contact img{
+           height: 110px; width: 110px;
+           
+        }
+        .contact_det{
+            padding-left: 20px;
+            float: right;
+            text-align: left;   
+        }
+        .contact_det p{
+          font-weight:500;
+        } 
+
+        .formbox h2{
+            color: white;
+            font-size: 25px;
+        }
+        .formbox p{
+            color: white;
+            font-weight: 400;
+        }
+        input[type="text"]{
+            width: 90%;
+            padding:12px;
+            margin: 10px;
+            border:1px solid rgb(126, 113, 113);
+            border-radius: 5px;
+            color:white;
+            font-size: 15px;
+            background-color: #c22b34;
+        }
+        input[type="text"]::placeholder{
+            color: white;
+        }
+
+        .button {
+           float: left;
+           background-color: black;
+           color: white; 
+           font-size: 18px;
+           font-weight: bold;
+           text-decoration: none;
+           text-align: center; 
+           margin-top: 20px;margin-left: 10px;
+           padding: 15px 40px;
+           border: 1px black solid;
+           border-radius: 5px;
+           transition-duration: 0.4s;
+           cursor: pointer;
+        }
+        .button:hover{
+            color: tomato;
+            background-color: white;
+        }
+
+         .footer {
+            width: 100%;
+            padding: 30px;
+            /* background-color: rgb(252, 122, 99); */
+            background-image: url(https://themes.envytheme.com/ecademy/wp-content/uploads/2020/05/register-shape.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            /* border: 5px solid rgb(252, 122, 99); */
+        }
+        .footer a{
+            color: white; font-size: 15px; font-weight: bold;
+            text-decoration: none;
+            text-align: center;
+            padding: 20px;
+        }
+        .terms {
+            float: right;
+        }
+        .terms:hover{
+            color:chartreuse;
+        }
+       .cnc{
+        float: left;
+       }
+
+    </style>
+</head>
+<body>
+    <!-- <div class="container">
+            <div class="forlogo">
+                <a href="index.html"><img src="cl-removebg-preview.png" alt="icon"></a>
+                     <div class="mainhead">
+                             <a href="index.html"><h1>CLINC</h1></a>
+                     </div>
+            </div>
+    </div> -->
+
+     <div class="mainbody">
+        <div class="mainbody-wrap">
+            <h2>Contact Us</h2>
+            <p><a href="#">Home</a> / contact Us</p>
+        </div>
+    </div>
+    <div class="main-container">
+      <div class="main-row">
+         <div class="contact_container">
+             <p id="con_det">Contact Details</p>
+            <div>
+              <h2>Get In Touch</h2>
+                <div>
+                    <p id="conpar">Have any query ? or want to know more ?<br>
+                       Contact us and we will be happy to help.</p>
+                </div>
+                <ul>
+                    <li> <i class="fa-solid fa-location-dot"></i>
+                        <ul>
+                            <li><h2>Our Address</h2></li>
+                            <li>warje malwadi,NDA road,ganapati matha,<br>
+                                pune 411058,maharashtra</li>
+                        </ul>
+                    </li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <!-- <div class="address">
+                    <img src="loc.png" alt="loaction">
+                      <div class="add_detail">
+                          <h1>Our Address</h1>
+                           <p>warje malwadi,NDA road,ganapati matha,<br>
+                              pune 411058,maharashtra</p>
+                      </div>
+                </div>
+                <div class="E-Mail">
+                    <img src="email-img.webp" alt="E-Mail">
+                      <div class="E-Mail_detail">
+                        <h1>E-Mail</h1>
+                        <a href="#">clinc.inc.official@gmail.com</a>
+                      </div>
+                </div>
+                <div class="contact">
+                    <img src="phone_PNG49006.webp" alt="contact">
+                      <div class="contact_det">
+                        <h1>Contact</h1>
+                        <p>Mobile : <a href="#">+91 91754-87047</a></p>
+                      </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+     
+      <div class="form-container">
+          <div class="dabba">
+                <div class="formbox">
+                    <h2>Ready to Get Started?</h2>
+                    <p>Your email address will not be published.</p>
+                </div>
+                 <div class="box">
+                     <form action="#">
+                         <input type="text" placeholder="Your name" required><br>
+                         <input type="text" placeholder="Your e-mail adress" required><br>
+                         <input type="text" placeholder="Your phone number" required><br>
+                         <input type="text" placeholder="Your city" required><br>
+                         <input type="text" placeholder="Your query" required><br>
+                     </form>
+                       <button class="button" type="submit">Send Message</button>
+                 </div>
+          </div>
+      </div>
+      
+
+      <div class="footer">
+                 <a href="#" class="cnc">&copy; 2022 | CLINC . All rights reserved.</a>
+                 <a  href="#" class="terms">Terms & Conditions</a>
+      </div>
+
+ </body>
+
+</html>

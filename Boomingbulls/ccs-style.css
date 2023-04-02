@@ -1,0 +1,1870 @@
+* {
+    box-sizing:border-box;
+}
+/* html { max-width: 100vw;} */
+body{
+    margin: 0; padding: 0;
+    height: 100%; width: 100vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',"Nunito",sans-serif;
+}
+/* * h2 {font-family: "Nunito",sans-serif;} */
+header h1{
+    font-family: 'Times New Roman', Times, serif ;
+    text-align: center;font-size: 80px;color: whitesmoke;text-shadow: 1px 1px 2px #a3a7a8;
+    margin-top: 10px;margin-bottom: 10px;
+ } 
+
+header{
+    padding: 5px; 
+    background-image: url(https://themes.envytheme.com/ecademy/wp-content/uploads/2020/05/register-shape.jpg);
+    background-size: cover;
+}
+
+/* navbar styling starts here  */
+
+#nav-container-wrapper {
+  width: 100vw;
+   display: flex; 
+   position: sticky; 
+   top: 0; 
+   background: white;
+   z-index: 9999;
+   margin-top: 0%;
+   padding: 0 150px;
+ }
+.logo { position: relative;}
+.boom-logo:hover { box-shadow: none;}
+.nav-wrapper { 
+  display: block; position: relative;
+ padding-top: 15px; margin-left: auto;
+}
+.nav-item1 a {
+  color: #FE4A55;
+  font-size: 16.5px;
+  font-weight: 700;
+  font-family: "Nunito",sans-serif ;
+  text-decoration: none;
+}
+.nav-item a { 
+  color: #221638;
+  font-size: 16.5px;
+  font-weight: 700;
+  font-family: "Nunito",sans-serif ;
+  text-decoration: none;
+}
+.dropdown-menu .dropdown-item {
+  border-bottom: 1px solid rgba(103, 99, 99, 0.151);
+}
+.nav-item a:hover {color: #FE4A55; background: transparent; cursor:pointer;}
+.nav-item1 a:hover {color: #FE4A55; background: transparent;cursor:pointer;}
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; /* remove the gap so it doesn't close */
+}
+/* navbar styling ends here  */
+
+/* navbars sidebar styling starts here  */
+.offcanvas { max-width: 100vw;}
+.offcanvas-body {
+  width: 100vw;
+  margin: 0;padding: 0;
+}
+.sidebar-ul {
+   list-style-type: none;
+   margin: 0; padding: 0;
+}
+.nav-li {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100vw;
+  padding: 0%;
+  border-top: 1px solid rgba(103, 99, 99, 0.151);
+}
+.nav-li a{
+  text-decoration: none;
+  color: #606060;
+  font-size: 15px;
+  font-weight: 400;
+}
+.nav-link {
+  position: relative;
+}
+.sub-li {
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+  justify-content: center;
+  width: 100vw;
+  padding: 0%;
+  border-top: 1px solid rgba(103, 99, 99, 0.151);
+}
+.sub-li a{
+  text-decoration: none;
+  color: #606060;
+  font-size: 15px;
+  font-weight: 400;
+}
+.usul,.offul {
+  list-style-type: none;
+   margin: 0; padding: 0;
+}
+.menu-btn {
+  position: relative;
+  margin-left: auto;
+  margin-right: 50px;
+  margin-top: auto; margin-bottom: auto;
+}
+/* navbars sidebar styling starts here  */
+
+/* nav {
+    display: flex;
+    background-color: #333;
+    overflow: hidden;
+    /* position :sticky; */
+    /* top: 0;
+    margin-bottom: 0%;
+} */
+/* nav.i{
+  padding: 2px 1px;
+}
+#log{
+    margin-left: auto;
+}
+#log1{
+  margin-left: 650px;
+}
+
+.menu-btn:hover{
+    background-color: white;
+    color: black;
+}
+
+nav a {
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+    font-weight: 500;
+    text-align: center;
+    float: left;
+    color: white;
+}  */
+
+/* banner start from here  */
+.banner {
+  display: flex;
+  overflow: hidden;
+  background-image: url(https://boomingbulls.com/wp-content/uploads/2021/01/Main-banners-1.jpg.webp);
+  height: 850px; width:100%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  background-size: cover;
+}
+.bannercontent {
+position: absolute;
+height: 250px;
+width : 550px;
+top: 45vh;
+right: 25vh;
+}
+.bannercontent h1{
+  color: white;
+  width: 80%;
+  font-size: 45px;
+  font-weight: 800;
+  font-family: "Nunito";
+  margin-bottom: 20px;
+}
+.bannercontent p{
+  color: white;
+  width: 95%;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.7;
+  margin-top: 10px;
+}
+.botton {
+  margin-top: 40px;
+}
+.forest1{
+  padding:12px 34px 12px 34px;
+  margin:0 0 0 0;
+  background-color: rgb(241, 72, 60);
+  text-decoration: none;
+  color:white;
+  font-weight:bold;  
+  border-radius: 5px;
+  opacity:1;
+  transition:1s;
+}
+.forest1:hover { 
+  cursor:pointer;
+  background-color: rgb(60, 3, 60);
+  color:white;
+  text-decoration: none;
+  opacity:1;
+  transition:1s;
+}
+/* banner ends from here */
+
+/* card container starts here  */
+.cardcontainer {
+  width: 100%;
+  height: 1050px;
+  background-color: rgba(128, 128, 128, 0.125);
+}
+.cardrows {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: center;
+  padding-top: 0%;
+}
+.cardbox {
+  position: relative;
+  height: 370px;
+  width: 380px;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 8px;
+  text-align: center;
+}
+.cardbox:hover{
+  transform: translateY(-25px);
+  transition: 0.5s ease-in-out;
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.cardimg {
+  margin-top: 15px; margin-bottom: 15px;
+}
+.cardimg img{
+  align-items: center;
+  height:100px;
+  width: 100px;
+}
+.cardimg img:hover{ box-shadow: none; }
+.cardbox h1 {
+  font-size: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-bottom: 0%;
+}
+.cardpara {
+  padding: 0px 15px;
+}
+.cardpara p {
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+}
+.startNowBtn {
+  position: absolute ;
+  display: inline-block;
+  bottom: 6.5vh;
+  left : 20vh;
+}
+.startNowBtn a{
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  color: tomato;
+}
+.startNowBtn a:hover {
+  color:#333;
+}
+/* second card row part start here  */
+.secondrow {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: center;
+  /* padding-left: 10.5%; */
+  padding-top: 5%;
+}
+ .firstCardbox {
+    position: relative;
+    height: 530px;
+    width: 780px;
+    padding: 100px 65px;
+    background-color:  #f5f7fa;
+    font-family: Poppins;
+    text-align:start;
+  }
+  .firstCardbox .sub-title {
+    font-size: 16px;
+    font-weight: 900;
+    color: red ;
+  }
+  .firstCardbox h1 {
+    font-family: "Nunito",sans-serif;
+    font-size: 33px;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .firstCardbox p{ 
+    font-family: Poppins;
+    color: #606060;
+    font-size: 15.5px;
+    font-weight: 200;
+    line-height: 25px;
+    word-spacing: 0.1rem;
+    margin-bottom: 40px;
+  }
+  .firstCardbox .sub-title2 {
+    font-size:  15.5px;
+    font-weight: 500;
+    color: red ;
+  }
+  .enrollBtn {
+  margin-top: 35px;
+  }
+.hbutton{
+  padding:13px 33px 13px 33px;
+  margin:0 0 0 0;
+  background-color: rgb(241, 72, 60);
+  border-radius: 5px;
+  text-decoration: none;
+  color:white;
+  font-weight:bold;  
+  opacity:1;
+  transition:1s;
+}
+.hbutton:hover { 
+  cursor:pointer;
+  background-color: rgb(60, 3, 60);
+  color:white;
+  text-decoration: none;
+  opacity:1;
+  transition:1s;
+}
+
+.secondCardBox {
+  position: relative;
+  height: 530px;
+  width: 405px;
+  padding: 10px 20px;
+  background-image: url(https://boomingbulls.com/wp-content/uploads/2020/09/Cover-02-min-scaled.jpg);
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+} 
+/* second card row part end here  */
+/* card container ends here  */
+
+/* about us section starts here  */
+.aboutUsCard {
+  width: 100%;
+  height: 1900px;
+  background-color:white;
+}
+.thirdrow {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: center;
+  padding-top: 5%;
+}
+.thirdCardbox {
+  position: relative;
+  height: 580px;
+  width: 550px;
+  padding: 100px 30px;
+  font-family: Poppins;
+  text-align:start;
+}
+.thirdCardbox .sub-title {
+  font-size: 18px;
+  font-weight: 900;
+  color: red ;
+}
+.thirdCardbox h1 {
+  font-family: "Nunito",sans-serif;
+  font-size: 33px;
+  font-weight: 700;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.thirdCardbox p{
+  font-family: Poppins;
+  color: #606060;
+  font-size: 15.5px;
+  font-weight: 200;
+  line-height: 25px;
+  word-spacing: 0.1rem;
+  margin-bottom: 20px;
+}
+.knowMoreBtn {
+  margin-top: 35px;
+  }
+  .fourthCardBox {
+    position: relative;
+    height: 700px;
+    width: 700px;
+    padding: 10px 20px;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+  } 
+  .fourthCardBox img:hover {box-shadow: none;}
+  .sub-img img:hover {box-shadow: none;}
+  .sub-img {
+    position: absolute;
+    top: 60%;
+    left: 12%;
+  }
+/* about us section ends here  */
+
+/* about us section's second row starts here  */
+.fifthCardbox {
+  position: relative;
+  height: 600px;
+  width: 650px;
+  padding: 0px 0px 40px 80px ;
+  overflow: hidden;
+} 
+.fifthCardbox img:hover {box-shadow: none;}
+.sixthCardBox {
+  position: relative;
+  height: 600px;
+  width: 550px;
+  padding: 40px 30px;
+  font-family: Poppins;
+  text-align:start;
+}
+.sixthCardBox .sub-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: red ;
+}
+.sixthCardBox h1 {
+  font-family: "Nunito",sans-serif;
+  font-size: 33px;
+  font-weight: 700;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.sixthCardBox p{
+  font-family: Poppins;
+  color: #606060;
+  font-size: 15.5px;
+  font-weight: 200;
+  line-height: 25px;
+  word-spacing: 0.1rem;
+  margin-bottom: 30px;
+}
+
+.unorder{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+}
+.span-img {
+  display: block;
+  position: relative;
+  color: #221638;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+}
+.span-img  img{
+  width:30px;
+  height:30px;
+  margin-right: 10px;
+}
+.unorder li{
+display: list-item;
+list-style: none;
+margin-left: 0px;
+margin-right: 50px ;
+margin-bottom: 20px;
+}
+.knowMoreBtn {
+  margin-top: 35px;
+  }
+/* about us section's second row ends here  */
+
+/* number section start  */
+.number {
+  width: 100%;
+  height: 350px;
+  padding: 10px 0px;
+  margin-bottom: 20px;
+
+}
+.numbers-row {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: center;
+}
+.num-col {
+  position: relative;
+  height: 330px;
+  width: 300px;
+  margin: 0;
+  padding: 10px 20px;
+  background-color: white;
+  text-align: center;
+  border-right: 1px solid #f4f3f5 ;
+}
+.numbers-row :last-child{
+  border-right: none;
+}
+.wrapper {
+  margin-top: 60px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.wrapper img {
+  align-items: center;
+}
+.wrapper img:hover {box-shadow: none;}
+.num-col h3 {
+  color: #fe4a55;
+  font-family: "Nunito",sans-serif;
+  font-size: 44px;
+  font-weight: bold;
+  margin-bottom: 5px;
+
+}
+.num-col p {
+  font-size: 16px;
+  margin-top: 0px;
+}
+.wrap {
+  position: absolute;
+  top: 130px;
+  left: 0;
+  width: 100%;
+}
+/* number section end  */
+
+/* experience section start  */
+.experience {
+  width: 100%;
+  height: 900px;
+  background-color:white;
+  margin-top: 0%; margin-bottom: 20px;
+}
+.experience-row {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: center;
+  padding-top: 2%;
+}
+.experience-col1 , .experience-col2 {
+  position: relative;
+  height: 800px;
+  width: 650px;
+  background-color:white;
+  padding: 60px ;
+  font-family: Poppins;
+  text-align:start;
+  margin-right: 2px;
+}
+.exp-1 {
+  padding-left: 80px;  padding-right: 10px;
+}
+.exp-1 .sub-title {
+ color: #fe4a55;
+ font-size: 16px;
+ font-weight: 600;
+}
+.experience h1{
+  font-family: "Nunito",sans-serif;
+  font-size: 33px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.experience p {
+  color: #606060;
+  font-size: 15px;
+  font-weight: 200;
+  line-height: 25px;
+  word-spacing: 0.1rem;
+  margin-bottom: 30px;
+}
+.exp-list {
+  margin-bottom: 45px;
+  padding: 0%;
+  list-style: none;
+}
+.exp-ul{
+  list-style-type: none;
+  margin: 0%;
+  padding: 0%;
+}
+.exp-list > li {
+  color: #221638;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+}
+.exp-ul li {
+  padding-bottom: 10px;
+}
+.exp-ul span {
+  position: relative;
+  height: 30px; 
+  width: 30px; 
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;margin-bottom: 0%;
+}
+.exp-ul i {
+  position: absolute;
+  height: 25px; 
+  width: 25px; 
+  color: white;
+  background-color: red;
+  border-radius: 50%;
+  top: 10%; left: 10%;
+  padding: 4px 3px ;
+}
+.exp-ul i:hover {
+  background-color: white;
+}
+.exp-2 {
+  padding-right: 20px; padding-left: 0px;
+}
+.red-area {
+  position: relative;
+  height: 790px; width: 550px;
+  background: #FE4A55;
+  margin: 0px;
+}
+.anish-pic {
+  position: absolute;
+  top: 100px;
+  left: 40px;
+  height: 700px;
+  width: 550px;
+  background-image: url(https://boomingbulls.com/wp-content/uploads/2020/11/IMG-8657-min-scaled-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+}
+.trainer {
+  background:#FE4A55;
+  position: absolute;
+  top: 730px; left: 40px;
+  height: 120px; width: 550px;
+  border-top-right-radius: 30px;
+}
+.trainer h2 {
+  font-family: "Nunito",sans-serif;
+  font-size: 33px;
+  font-weight: 700;
+  color: white;
+  margin: 0%; padding-top: 15px;
+  
+}
+/* experience section end  */
+
+/* event section starts here */
+
+.event-headings{
+  text-align:start ; padding-left: 210px;
+  margin-top: 50px; 
+}
+.event-headings h5 {
+  color: #fe4a55;
+  font-size: 16px;
+  font-weight: 600;
+}
+.event-headings h2{
+  font-family: "Nunito",sans-serif;
+  font-size: 27px;
+  font-weight: 600;
+  color: #333;
+  padding: 0%;
+  margin-top: 10px;
+  text-align: start;
+}
+.events {
+  height: 250px; width: 100%;
+  /* margin-top: 20px; margin-bottom: 20px; */
+  padding-top: 5px; padding-bottom: 15px;
+}
+.event-box-row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+}
+/* .event-box {
+  position: relative;
+  height: 340px;
+  width: 1200px;
+  background-color:white;
+  font-family: Poppins;
+  text-align:start;
+  padding: 20px;
+} */
+/* .event-box h5{
+ color: #fe4a55;
+ font-size: 16px;
+ font-weight: 600;
+ margin: 0%;
+}
+.event-box h2 {
+  font-family: "Nunito",sans-serif;
+  font-size: 27px;
+  font-weight: 600;
+  color: #333;
+  text-align: start;
+  padding: 0%;
+  margin-top: 20px;
+} */
+.event-date{
+  position: relative;
+  height: 220px; width: 150px;
+  text-align: center;
+  background-color: white;
+}
+.event-date p{
+  position: absolute;
+  top: 40%;
+  color: #606060;
+  font-family: poppins;
+  font-size: 16px;
+  font-weight: 600;
+}
+.event-launch {
+  position: relative;
+  height: 220px; width: 580px;
+  background-color: white;
+  padding: 20px 10px;
+}
+.event-launch a{
+  font-family: "Nunito",sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  color: #221638;
+}
+.event-launch a:hover {
+  color: #FE4A55;
+}
+.event-subline {
+color: #000000;
+font-family: poppins;
+font-size: 16px;
+font-weight: 800;
+margin-top: 20px; margin-bottom: 25px;
+}
+.event-launch #p {
+  color: #606060;
+  font-family: poppins;
+  font-size: 16px;
+}
+.event-pic {
+  position: relative;
+  height: 220px; width: 400px; 
+  overflow: hidden;
+  margin-left: 20px;
+}
+.event-pic img {
+  height: 210px; width: 390px; 
+}
+/* event section ends here */
+
+/* how to apply section starts here */
+.apply {
+  width: 100%;
+  height: 800px;
+  background-color:white;
+  margin-top: 0%; margin-bottom: 20px;
+}
+.apply-row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  padding-top: 2%;
+}
+.apply-box {
+  position: relative;
+  height: 700px;
+  width: 600px;
+  font-family: Poppins;
+  text-align:start;
+  padding: 10px;
+  overflow: hidden;
+}
+.apply-box .sub-title {
+  font-size: 16px; color: #fe4a55;
+  font-weight: 600; padding-left: 50px;
+}
+.apply-box h2 {
+  font-family: "Nunito",sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+  text-align: start;
+  margin-bottom: 50px; margin-top: 10px;
+  padding: 0px 0px 0px 50px;
+}
+.apply-box ul {
+  margin-top: 0;
+  display: block;
+  list-style-type: none;
+}
+.apply-list {
+  position: relative;
+  height: 100px; width: 100%;
+  display: list-item;
+  margin-top: 30px; margin-bottom: 40px;
+  list-style: none;
+  padding-left: 100px;
+}
+.apply-icon {
+  position: absolute;
+  line-height: 84px;
+  top: 0%; left: 0%;
+  display: inline-block;
+  height: 85px ; width: 85px;
+  background-color: #FE4A55;
+  border-radius: 50%;
+  margin: 0%;
+}
+.apply-icon i {
+  position: absolute;
+  top: 20px; left: 20px;
+  color: white;
+  font-size: 40px;
+}
+.apply-icon:hover{
+  background-color:  rgb(51, 5, 51);
+}
+.apply-list h3 {
+  font-size: 20px;
+  font-family: Poppins;
+  color: black;
+  font-weight: 800;
+  margin: 0%;
+}
+.apply-list p {
+  color: #606060;
+  font-family: poppins;
+  font-size: 15px;
+  margin-top: 10px;
+  font-weight: 300;
+}
+.apply-a {
+  font-size: 16px; 
+  color: #fe4a55;
+  font-weight: 300; 
+  cursor: pointer;
+  text-decoration: none;
+}
+.apply-a:hover{color: #fe4a55;}
+.apply-img {
+  position: relative;
+  height: 600px;
+  width: 600px;
+  background-image: url(https://boomingbulls.com/wp-content/uploads/2021/01/information-img-min.jpg.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 50px 20px;
+  overflow:hidden;
+}
+/* how to apply section ends here */
+
+/* brouchure section starts  */
+.brochure {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: center;
+  width : 100% ; height: 300px;
+  margin-bottom: 80px;
+}
+.brochure-wrap {
+  position: relative;
+  /* top:50%; left: 50%; */
+  /* transform: translate(-50%,-50%); */
+  height: 250px; width: 1100px;
+  padding: 15px;
+  background-color: #F7F7F7;
+  text-align: center;
+  overflow: hidden;
+}
+.download-icon { margin: 0%;}
+.head {
+  margin-top: 10px; margin-bottom: 10px;
+}
+.head3 h3{
+  color: #FE4A55;
+  font-size: 22px; font-weight: 400;
+  margin-top: 20px; margin-bottom: 20px;
+}
+.brochure-info {
+color: #606060;
+font-weight: 400;font-size: 18px;
+margin-bottom: 25px;
+/* padding:0% 200px; */
+}
+.brochure-link a{
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color:#FE4A55;
+  border: 2px solid #FE4A55;
+  border-radius: 20px;
+  padding: 5px 20px;
+}
+.ribbon {
+  position: absolute;
+  text-align:center;
+  width: 200px;
+  transform: translateY(-50%) translateX(-50%) translateX(35px) rotate(-45deg);
+  top: 35px;
+  font-size: 13px;
+  line-height: 2;
+  font-weight: 800;
+  text-transform: uppercase;
+  background: #000;
+  color: #fff;
+}
+/* brouchure section ends  */
+
+/* pace section starts */
+.pace-container {
+  height: 200px; width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: center; 
+  margin-bottom: 50px;
+}
+.pace {
+  height: 200px; width: 500;
+  text-align: center;
+  padding: 20px;
+}
+.pace-subtitle {
+  color: #FE4A55;
+  font-size: 15px; font-weight: 500;
+  margin: 0%;padding: 0%;
+}
+.pace-h2 h2 {
+  font-family: "Nunito",sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 5px;margin-top: 0%;
+}
+.pace p{
+  color: #606060;
+  font-weight: 400;font-size: 18px;
+  margin: 0%; padding: 0px 400px;
+}
+
+/* pace section ends  */
+
+/* course section starts  */
+.mycourses {
+  height: 700px; width: 100%;
+}
+.mycourse-row {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: center;
+}
+.my-course {
+  position: relative;
+  height: 630px; width: 370px;
+  margin: 15px;
+  border-radius: 5px;
+}
+.my-course:hover{
+  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.24), 0 12px 30px 0 rgba(0, 0, 0, 0.19);
+}
+.course-type1-pic {
+  position: relative;
+  height: 250px; width: 100%;
+  background-image: url(https://boomingbulls.com/wp-content/uploads/2022/04/Offline-Cover-750-x-500.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.course-type2-pic {
+  position: relative;
+  height: 250px; width: 100%;
+  background-image: url(https://boomingbulls.com/wp-content/uploads/2020/09/Online-Cover-750-x-500.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.course-price {
+  height: 47px; width: 50%;
+  position: absolute;
+  background-color: #FE4A55;
+  bottom: 3.5px; right: 0%;
+  border-top-left-radius: 12px;
+  align-items: center;
+}
+.course-price span{
+  position: absolute;
+  color: white;
+  font-size: 26px; font-weight: 500;
+  top: 7px; left: 20px;
+}
+.course-author {
+position: relative;
+}
+.course-author a{
+  position: absolute;
+  color: #FE4A55;
+  font-size: 17px; font-weight: 700;
+  text-decoration: none;
+  top: 8px; left: 50px;
+}
+.course-author a:hover{ color: #FE4A55;  }
+.course-information {
+  background-color: rgba(255, 228, 196, 0.238);
+  padding: 35px;
+}
+.course-information:hover{
+  background-color: white;
+}
+#course-off{
+  color: black;
+  font-size: 24px; font-weight: 600;
+  text-decoration: none;
+}
+#course-off:hover {
+  color:#FE4A55;
+  transition: 0.4s;
+}
+#course-off-p, .course-footer{
+  color: #606060;
+  font-weight: 400;font-size: 18px;
+}
+.footwrap {
+  margin-top: 25px;
+}
+.course-footer {
+  display:flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: space-between;
+  padding: 0%;
+}
+/* course section ends  */
+
+/* contactus section starts  */
+
+.contactus-container {
+  width: 100%;
+  height: 900px;
+  margin-top: 0%; margin-bottom: 20px;
+}
+.contact-row {
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+position: relative;
+justify-content: center;
+padding-top: 80px;
+}
+.contact-details {
+  position: relative;
+  width:470px;height: 800px;
+  background-color: white;
+}
+.contact-details span { 
+  color:  #FE4A55; 
+  font-weight: 500; font-size: 15px;
+  font-family: "Nunito",sans-serif;
+}
+.contact-details h2 {
+  font-size: 30px;
+  font-family: "Nunito",sans-serif;
+  margin-top: 10px; margin-bottom: 20px;
+}
+.contact-details p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #606060;
+  font-weight: 400;
+}
+
+.contact-details  ul {
+margin-top: 0;
+display: block;
+list-style-type: none;
+padding: 0%;
+}
+.contact-list {
+position: relative;
+height: 120px; width: 100%;
+display: list-item;
+list-style: none;
+padding-left: 100px;
+}
+.contact-icon {
+position: absolute;
+line-height: 84px;
+top: 0%; left: 0%;
+display: inline-block;
+height: 75px ; width: 65px;
+background-color: #f8f9f8;
+margin: 0%;
+border-radius: 5px;
+}
+.contact-icon i {
+position: absolute;
+top: 20px; left: 20px;
+color: #FE4A55;
+font-size: 30px;
+}
+.contact-icon:hover{
+/* background-color: #FE4A55; */
+}
+.contact-list h3 {
+font-size: 20px;
+font-family: "Nunito",sans-serif;
+color: black;
+font-weight: 600;
+margin: 0%;
+}
+.contact-list p {
+color: #606060;
+font-family: poppins;
+font-size: 13px;
+margin-top: 10px;
+font-weight: 600;
+padding-right: 100px;
+}
+.contact-list a { 
+  text-decoration: none; 
+  color: #FE4A55; 
+}
+
+
+      .contact-form {
+          position: relative;
+          width:470px;height: 800px;
+      }
+      .contact-dabba{
+          background-image: url(https://themes.envytheme.com/ecademy/wp-content/uploads/2020/05/register-shape.jpg);
+          padding: 30px;
+          height: 600px;
+          border-radius: 5px;
+      }
+      .formbox h2{
+          color: white;
+          font-size: 25px;
+      }
+      .formbox p{
+          color: white;
+          font-weight: 400;
+      }
+      input[type="text"]{
+          width: 90%;
+          padding:12px;
+          margin: 10px;
+          border:1px solid rgb(126, 113, 113);
+          border-radius: 5px;
+          color:white;
+          font-size: 15px;
+          background-color: #c22b34;
+      }
+      input[type="text"]::placeholder{
+          color: white;
+      }
+
+      .button {
+         float: left;
+         background-color: black;
+         color: white; 
+         font-size: 18px;
+         font-weight: bold;
+         text-decoration: none;
+         text-align: center; 
+         margin-top: 20px;margin-left: 10px;
+         padding: 13px 30px;
+         border: 1px black solid;
+         border-radius: 5px;
+         transition-duration: 0.4s;
+         cursor: pointer;
+      }
+      .button:hover{
+          color: tomato;
+          background-color: white;
+      }
+
+/* contactus section ends  */
+
+/* main{
+    background-color: white;
+}
+.posts{
+  height: 700px;
+}
+.postrow{
+  display: flex;
+  flex-wrap: wrap;
+}
+.postitem{
+  position: relative;
+  width: 65%;
+  height: 500px;
+  padding-left:30px; padding-right:25px; padding-top: 10px;padding-bottom: 10px;
+  margin-left: 25px;margin-right: 5px;
+  margin: 10px;
+}
+.carouse {
+  position: absolute;
+  background: #EEE;
+}
+
+.carouse-cell {
+  width: 66%;
+  height: 500px;
+  margin-right: 10px;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+#post-img{
+  width: 100%;
+  height:450px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* this above section is for index live charts */
+
+/*.post-item{
+  float: right;
+  width: 400px;
+  height: 600px;
+  padding: 15px;
+  margin-left: 60px;margin-right: 10px;margin-top: 20px;
+  background-color: bisque;
+  border-radius: 10px;
+}
+.chart-heading{
+  font-size: 30px;
+  text-align: center;
+}
+.ind{
+  background-color: #a3a7a8;
+  border-radius: 10px;
+  margin: 5px;
+}
+.charthead{
+  float: right;
+  margin: 0%;
+  padding-bottom: 0px;
+}
+.charthead h1{
+  font-size: 20PX;
+  text-align: start;
+  margin: 0%;
+  padding-top: 5px;
+  padding-bottom: 0px;
+  padding-right: 100px;
+}
+.span{
+  margin-top: 0%;padding-top: 0%;
+  margin-left: 20px;
+  padding-bottom: 5px;
+  font-size: 16px; 
+}
+.main-chart-img{
+  border-radius: 50%;
+  padding: 10px; margin: 5px;
+}
+
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  }
+
+h2{
+    text-align: center;
+    margin-top: 15px;margin-bottom: 15px;
+    font-size: 30px; text-decoration: solid;
+    padding: 15px;
+}
+
+.review-box {
+    position: relative;
+}
+.image{
+    width: 100%;
+    height: 500px;
+    opacity: 0.1;
+}
+h2.h2{
+    position: absolute;
+    top: 5px;
+    left: 30px;
+}
+p.firstpara{
+    position: absolute;
+    top: 80px;
+    left: 60px;
+}
+p.secondpara{
+    position: absolute;
+    top: 170px;
+    left: 60px;
+}
+p.thirdpara{
+    position: absolute;
+    top: 230px;
+    left: 60px;
+}
+p{
+    font-size: 18px;font-style: normal;font-weight: bold;
+}
+
+#review{
+    font-size: 20px; float:right;
+}
+aside{
+    position:absolute;
+    right: 10px;
+    top: 80px;
+    margin-left: 15px; margin-right: 30px;
+    padding-left: 40PX;padding-right: 40PX;
+    padding-bottom: 130px; padding-top: 130px; 
+    background-color: lightgrey;
+    }
+#ad{
+    font-style: italic; font-size: 15px;text-align: center;
+} */
+
+/* footer{
+    background-color: black;
+    overflow: hidden;
+    padding: 10px;
+}
+footer a{
+    text-align: center;
+    text-decoration:none;
+    color: white;
+    float: left;
+    padding: 20px;
+}
+footer a:hover{
+    color: aqua;
+} */
+
+   /* #fonder-img{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    margin-top: 50px;margin-bottom: 20px;
+    margin-left: 45% ;
+  }
+  .founderh1{
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.2em;
+    word-spacing: 0.5em;
+    margin: 0%;
+  }
+  .founder-p{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.1em;
+    word-spacing: 0.3em;
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+
+  .forstudents{
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .item{
+    position: relative;
+    height: 350px;
+    width: 400px;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 30px; 
+    padding-top: 30px;padding-bottom: 30px;
+    box-shadow: 4px 4px 4px black;
+}
+  .carousel2 {
+    position: absolute;
+    background: #EEE;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-bottom: 10px;
+  }
+  
+  .carousel-cell2 {
+    width: 70%;
+    height: 200px;
+    margin-right: 10px;
+    background: white;
+    border-radius: 5px;
+    counter-increment: gallery-cell;
+  }
+  #book-img{
+    height: 200px;
+    width: 150px;
+    margin-left: 20%;
+  }
+  #middle-carousel{
+    position: relative;
+    height: 350px;
+    width: 550px;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 30px; 
+    padding-top: 30px;padding-bottom: 30px;
+    box-shadow: 4px 4px 4px black;
+  }
+  #center-img{
+        height: 200px;
+        width: 300px;
+        margin-left: 10%;
+  }
+ .carousel3 {
+    position: absolute;
+    background: #EEE;
+    margin-left: 400px;
+    margin-right: 400px;
+  }
+  
+  .carousel-cell3 {
+    width: 77%;
+    height: 200px;
+    margin-right: 10px;
+    background: white;
+    border-radius: 5px;
+    counter-increment: gallery-cell;
+  }  
+  #hq{
+    padding-top: 25px;
+  }
+
+  /* footer section starts here  */
+ footer { 
+  background-color: #100f1f;
+  max-height: auto; width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: center;
+  
+}
+ .footer-container {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin-top: 100px;
+ }
+ .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+ }
+ .footer-section-box {
+   position: relative;
+   width: 25%;
+   color: white;
+   margin-bottom: 10px; padding: 0 15px;
+ }
+ .footer-section-box h2 {
+  font-family: "Nunito",sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  padding-top: 0%; 
+  text-align: start;
+ }
+ .footer-section-box h3 {
+  font-family: "Nunito",sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  padding-left: 10px;
+ }
+ .foot-ul {
+  list-style-type: square;
+  color: #FE4A55;
+ }
+ .foot-li { padding-bottom: 8px; }
+ .foot-ul :not(a) { font-size: 20px;}
+ .foot-lastul { list-style-type: none; padding-left: 10px; }
+ .footer-section-box li a{
+  font-family: poppins;
+  font-size: 15px;
+  color: #E4E4E4;
+  text-decoration: none;
+ }
+ .foot-li a:hover { 
+  color:#FE4A55; 
+  transition: 0.3s;
+  padding-left: 5px;
+}
+ .footer-bottom {
+  max-width: 1230px;
+  margin-top: 70px;
+ }
+ .footer-bot-box {
+  position: relative;
+  width: 50%;
+  margin-bottom: 30px; margin-top: 10px;
+  padding: 0 15px;
+ }
+ .footer-bot-box p{ color: #E4E4E4; font-size: 16px;}
+ .x1 { text-align: end; }
+ .x1 a { text-decoration: none; color: #E4E4E4;}
+ .x1 a:hover { color:#FE4A55; transition: 0.5s; }
+  /* footer section ends here  */
+  
+  
+@media screen and (max-width: 700px){
+    nav{
+        flex-direction: column;
+    }
+    #log,#log1{
+        margin-left: 0;
+    }
+    .banner {
+      height :560px ;
+      background-size: 100vh;
+      background-repeat: no-repeat;
+      position: relative;
+      z-index: 1;
+      background-color: rgba(128, 128, 128, 0.125);
+      background-position: top center;
+    }
+    .bannercontent {
+      position: absolute;
+      height: auto;
+      width : 100%;
+      top: 11vh;
+      right: 0vh;
+      padding: 10px 10px 10px 10px;
+      text-align: center;
+    }
+    .bannercontent h1{
+       font-size: 30px;
+       width: 100%;
+    }
+     .bannercontent p{
+       font-size: 16px;
+       width: 100%;
+       font-weight: 400;
+    }
+    .forest1{
+      padding:8px 18px 8px 18px;
+    }
+}
+
+@media screen and (max-width: 700px)
+{
+  .cardcontainer {
+    width: 100%; height: auto;
+    background-color: rgba(128, 128, 128, 0.125);
+  }
+  .cardrows {
+    padding-left: 0%; padding-top: 0%;
+  }
+  .cardbox {
+    align-items: center;
+    margin: 20px;
+  }
+  .cardbox:hover{
+    transform: translateY(-18px);
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  }
+  .startNowBtn {
+    bottom: 5.5vh;
+    left : 15vh; 
+  }
+}
+
+@media screen and (max-width: 700px) 
+{
+  .firstCardbox {
+    max-height: 530px; width: 100vh;
+    padding: 20px 20px; margin: 10px;
+  }
+  .firstCardbox .sub-title {
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .firstCardbox h1 { 
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 10px;
+  }
+  .firstCardbox p{ 
+    color: #606060;
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  .hbutton{
+    padding:8px 18px 8px 18px;
+  }
+  .secondCardBox {
+    max-height: 500px; width: 100vw;
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 700px) 
+{
+  .aboutUsCard {
+    width: 100vw; height: auto;
+  }
+  .thirdCardbox {
+    max-height: 580px; width: 100vw;
+    padding: 20px 20px;
+    text-align: center;
+  }
+  .thirdCardbox .sub-title {
+    font-size: 16px;
+  }
+  .thirdCardbox h1 {
+    font-size: 30px;
+  }
+  .thirdCardbox p{
+    font-size: 15px;
+  }
+  .fourthCardBox {
+    height: auto; max-width: 100vw;
+    padding: 20px 20px;
+    text-align : center;
+  } 
+  #forthCardImg {
+    max-height: 90vh; max-width: 90vw;
+  }
+  .sub-img {display: none;}
+
+}
+
+@media screen and (max-width: 700px) 
+{
+  .fifthCardbox {
+    max-height: 400px; width: 100vw;
+    padding: 10px 20px;
+    margin-top: 30px;
+  } 
+  #fifthCardImg{
+    max-height: 90vh; max-width: 90vw;
+  }
+  .sixthCardBox {
+    height: 500px; width: 100vw;
+    padding: 10px 20px;
+  }
+  .span-img {
+    font-size: 13px; font-weight: 700;
+  }
+  .span-img  img{
+    width:18px; height:18px;
+  }
+  .unorder li{
+    margin-right: 20px ; margin-bottom: 10px;
+    }
+    .knowMoreBtn {margin-left: 23vw;}
+}
+
+@media screen and (max-width: 700px) 
+{
+.number {
+  width: 100vw;
+  height: auto;
+  padding: 10px 10px;
+  margin-bottom: 20px;
+  }
+  .numbers-row {
+    flex-direction: column;
+  }
+  .num-col {
+    max-width: 100vw; height: 150px;
+    margin:0px auto;
+    padding: 10px 10px;
+    border-bottom: 1px solid #f4f3f5 ;
+    border-right: none;
+    position: relative;
+    justify-content: center;
+  }
+  .numbers-row :last-child { border-bottom: none;}
+  .wrapper { margin-top: 10px; }
+  .wrapper img { display: none; }
+  .num-col h3 {
+    font-size: 33px;
+    margin-bottom: 5px;
+  }
+  .wrap {
+    position: absolute;
+    top: 20px; max-width: 100vw;
+  }
+}
+
+@media screen and (max-width: 700px) 
+{
+  .experience {
+    width: 100vw; height: auto;
+  }
+  .experience-row  {
+    flex-direction: column;
+  }
+  .experience-col1 , .experience-col2 {
+    max-height: 1000px; width: 100vw;
+    padding: 10px ;
+  }
+  .exp-1{ height: 850px; width: 100vw;}
+  .exp-1 .sub-title { font-size: 14px; }
+  .experience h1{ font-size: 28px; }
+  .experience p { font-size: 14px; }
+  .exp-list  li {  font-size: 14.5px; }
+  .exp-ul span { height: 25px; width: 25px; }
+  .exp-ul i { height: 20px; width: 20px; }
+  .exp-2 { max-height: 500px; width: 100vw; }
+  .red-area {
+    height: 450px; width: 360px;
+  }
+  .anish-pic {
+    height: 420px; width: 330px;
+    top: 30px; right: 5px;
+  }
+  .trainer {
+    top: 370px; left: 35px;
+    height: 80px; width: 335px;
+  }
+  .trainer h2 {
+    font-size: 23px;
+    margin: 0%; padding-top: 15px;
+  } 
+}
+
+@media screen and (max-width: 700px) 
+{
+  .event-headings { padding-left: 0px; margin: 0%;}
+  .event-headings h5 {text-align: center; font-size: 15px;}
+  .event-headings h2 { text-align: center;font-size: 25px; margin-bottom: 0%;}
+  .events { width: 100vw; height: auto; }
+  .event-box-row { flex-direction: column;}
+  .event-date{
+    height: 30px; width: 100vw;
+    text-align: center; margin-bottom: 10px;
+  }
+  .event-date p{
+    position: relative;
+    font-size: 15.5px; top: 0% ;
+  }
+  .event-launch {
+  height: auto; width: 100vw;
+  text-align: center;
+  }
+  .event-launch #p { font-size: 14.5px;}
+  .event-pic {
+    height: 240px; width: 100vw; 
+    margin-left: 0px; padding: 10px;
+  }
+  .event-pic img {
+    height: 210px; width: 370px; 
+  }
+}
+
+@media screen and (max-width: 700px) 
+{
+  .apply { width: 100vw; height: auto; }
+  .apply-row { flex-direction: column; width: 100vw; }
+  .apply-box {
+    max-height: 700px;
+    width: 100vw;
+    padding: 10px;
+  }
+  .apply-box h2 {  font-size: 30px;}
+  .apply-box ul { margin: 0%; padding: 0%; }
+  .apply-list { padding-left: 70px;}
+  .apply-icon {  height: 55px ; width: 55px;}
+  .apply-icon i { 
+    font-size: 28px;
+    top: 12px; left: 12px;
+  }
+  .apply-list h3 { font-size: 18px;}
+  .apply-list p {  font-size: 14px;}
+  .apply-img {  
+    height: 300px; width: 90vw;
+    margin-top: 30px; margin-left: 12vw;
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 700px) 
+{
+  .brochure { width : 100vw ; height: 350px;margin: 0px;}
+  .brochure-wrap {
+    height: 280px; width: 100vw; 
+    margin: 10px; padding: 30px;
+  }
+  .head3 h3 {font-size: 19px }
+  .brochure-info {font-size: 15px }
+  .ribbon {  top:45px; left: 15px;}
+}
+
+@media screen and (max-width: 700px) 
+{
+  .pace {
+    min-height: 200px; width: 100vw;
+    padding: 20px;
+  }
+  .pace-h2 h2  {  font-size: 27px; }
+  .pace p { font-size: 14px; padding: 0;}
+}
+
+@media screen and (max-width: 700px) 
+{
+  .mycourses { height: auto; width: 100vh; margin:0px;}
+  .mycourse-row { flex-direction: column;width: 100vh;}
+  .my-course {max-height: 630px; width: 95vw; margin: 15px 10px;}
+
+  main { display: none;}
+}
+
+@media only screen and (min-device-width: 1200px) 
+{
+   #navmenu {display: none;}
+}
+
+@media only screen and (min-device-width: 150px) and (max-device-width: 1199px)
+{
+  #nav-container-wrapper {padding: 0%; }
+  .nav-item1,.nav-item { display: none} 
+}
+
+@media screen and (max-width: 700px) 
+{
+  .footer-row { flex-direction: column;}
+  .footer-section-box, .footer-bot-box  { width: 100vw;}
+  .footer-section-box h2 {font-size: 27px;}
+  .footer-bot-box { text-align: center;}
+}
+
+@media screen and (max-width: 700px) 
+{
+  .contactus-container { width: 100vw;height: auto; padding:15px;}
+  .contact-details {width: 100vw;}
+  .contact-form {width: 100vw;}
+}

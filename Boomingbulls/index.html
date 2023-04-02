@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/clinc/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/clinc/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/clinc/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="ccs-style.css">
+    <script src="https://kit.fontawesome.com/f40c28a478.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
+    <!-- bootstrp links start  -->
+    <link href="https://www.dafontfree.net/embed/bnVuaXRvLXNhbnMtbGlnaHQmZGF0YS84MDcvbi8xODE3NjEvTnVuaXRvU2Fucy1MaWdodC50dGY" rel="stylesheet" type="text/css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- bootstrp links end  -->
+    <title>Booming Bulls Dummy Site</title>
+</head>
+<body>
+<!-- navbar starts here  -->
+
+<div class="container-fluid my-2" id="nav-container-wrapper">
+    <div class="logo">
+        <a class="nav-link " aria-current="page" href="#"><img class="boom-logo" src="https://boomingbulls.com/wp-content/uploads/2021/06/250-x-69.png" alt="logo"></a>
+    </div>
+
+<div class="nav-wrapper ">
+  <ul class="nav">
+    <li class="nav-item1">
+      <a class="nav-link" href="#">Home</a>
+    </li>
+    <li class="nav-item dropdown">
+       <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">About Us</a>
+         <ul class="dropdown-menu py-3 px-3">
+            <li><a class="dropdown-item" href="#">About Booming Bulls</a></li>
+            <li><a class="dropdown-item" href="#">Testimonials</a></li>
+            <li><a class="dropdown-item" href="#">FAQ</a></li>
+        </ul>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="course.html">Online Courses</a>
+    </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Offline Courses</a>
+          <ul class="dropdown-menu py-4 px-4">
+            <li><a class="dropdown-item" href="#">Delhi</a></li>
+            <li><a class="dropdown-item" href="#">Pune</a></li>
+            <li><a class="dropdown-item" href="#">Hyderabad</a></li>
+            <li><a class="dropdown-item" href="#">Bengaluru</a></li>
+            <li><a class="dropdown-item" href="#">ahemadabad</a></li>
+            <li><a class="dropdown-item" href="#">Surat</a></li>
+            <li><a class="dropdown-item" href="#">Mumbai</a></li>
+            <li><a class="dropdown-item" href="#">Gurgaon</a></li>
+        </ul>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Resourses</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Blogs</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="contactus.html" >Contact Us</a>
+    </li>
+    <button class="btn btn-none" id="navmenu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <!-- navbar ends here  -->
+
+    <!-- this section is for the menu button present on a nav bar which appears when it reaches 1196px  -->
+    <!-- and when click on that menu button sidebar is come from the top  -->
+  <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+    <div class="offcanvas-header">
+       <h5 class="offcanvas-title" id="offcanvasTopLabel"></h5>
+       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+    <div class="offcanvas-body">
+      <ul class="sidebar-ul">
+          <li class="nav-li">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class=" nav-li" >
+            <a class="nav-link" href="#">About Us</a>
+            <span class="menu-btn" onclick="addAboutUsInfo(this)"><i class="fa-solid fa-plus"></i></span>
+          </li>
+          <div id="add-aboutus"> </div>
+          <li class="nav-li" >
+            <a class="nav-link" href="#">Online Courses</a>
+          </li>
+          <li class=" nav-li">
+            <a class="nav-link"  href="#">Offline Courses</a> 
+            <span class="menu-btn" onclick="addOfflineCourseInfo(this)"><i class="fa-solid fa-plus"></i></span>
+          </li>
+          <div id="add-offCourse"> </div>
+          <li class="nav-li">
+            <a class="nav-link ">Resourses</a>
+          </li>
+          <li class="nav-li">
+            <a class="nav-link ">Blogs</a>
+          </li>
+          <li class="nav-li">
+            <a class="nav-link ">Contact Us</a>
+          </li>
+      </ul>
+   </div>
+</div>
+<!-- here top sidebar content ends  -->
+</ul>
+</div>
+</div>
+
+<!-- here whole navbar section ends  -->
+
+
+<div class="banner">
+  <div class="bannercontent" >
+     <h1>Learn to trade in the most simplified way.</h1>
+        <p> Booming Bulls Academy is the best stock market institute that provides the most simplified and to-the-point stock market course from the scratch for beginners.</p>
+        <div class="botton">
+             <a href="#" class="forest1"><i class="fa-sharp fa-solid fa-user-large"></i>&nbsp; Enroll Now</a>
+        </div>
+  </div>
+</div>
+
+<div class="cardcontainer">
+  <div class="cardrows">
+      <div class="cardbox">
+          <div class="cardimg">
+               <img src="https://imgs.search.brave.com/cOkohSu4_aPvmRP2MTqglqiARn8j_uAcvJgN12eFuyI/rs:fit:512:512:1/g:ce/aHR0cHM6Ly9jZG4x/Lmljb25maW5kZXIu/Y29tL2RhdGEvaWNv/bnMvYnVzaW5lc3Mt/ZmluYW5jZS0xNzIv/MTAyNC9icmFpbnN0/cm9tLTUxMi5wbmc" alt="brainimg">
+          </div>
+           <h1>Learn From Scratch</h1>
+          <div class="cardpara">
+              <p>Learn the basics of the stock market, to enhance the understanding of how does the Stock market works and what makes you earn in the market.</p>
+          </div>
+          <div class="startNowBtn"><a href="">Start Now!</a></div>
+      </div>
+      <div class="cardbox">
+          <div class="cardimg">
+               <img src="https://imgs.search.brave.com/26-WYsGrtC0fQ3MwGTXFTWubz_xhpxhbFF6FgeIcLsQ/rs:fit:512:512:1/g:ce/aHR0cHM6Ly93d3cu/aWNvbnNkYi5jb20v/aWNvbnMvZG93bmxv/YWQvYmxhY2svbW9u/aXRvci01MTIucG5n" alt="computerimg">
+          </div>
+          <h1>Revision Classes</h1>
+          <div class="cardpara">
+              <p>Over 300+ revision classes to help you cover any topic you miss in your live class. You will never be left behind.</p>
+          </div>
+          <div class="startNowBtn"><a href="">Start Now!</a></div>
+      </div>
+      <div class="cardbox">
+           <div class="cardimg">
+               <img src="https://imgs.search.brave.com/xm50voq_xO2BX1_KJnuZtbxQ0qf_VJL-pnHEC_915dE/rs:fit:910:980:1/g:ce/aHR0cDovL2Nkbi5v/bmxpbmV3ZWJmb250/cy5jb20vc3ZnL2lt/Z18zNDMyMjMucG5n" alt="shild_img">
+           </div>
+           <h1>Live Q/A Session</h1>
+           <div class="cardpara">
+               <p>We have Live Q/A interaction sessions with Anish Singh Thakur, where students ask their queries directly to him.</p>
+           </div>
+           <div class="startNowBtn"><a href="">Start Now!</a></div>
+      </div>
+  </div>
+
+      <div class="secondrow">
+        <div class="firstCardbox">
+           <span class="sub-title">INDIA'S NO. 1 STOCK MARKET COURSE</span>
+           <h1>Elite Traders Live Mentorship Program</h1>
+           <p>Elite Traders Live Mentorship Program aims to make you a professional trader with perfect knowledge of how and when to enter/exit the trade and book big profits. It includes many strategies to suit every trader's style, advanced in-depth dive of the current syllabus, future and options trading deep dive, and much more.</p>
+           <span class="sub-title2">Enroll Now by just paying ₹3000</span>
+           <div class="enrollBtn">
+            <a href="#" class="hbutton"><i class="fa-sharp fa-solid fa-user-large"></i>&nbsp; Enroll Now</a>
+           </div>
+        </div>
+        <div class="secondCardBox"></div>
+    </div>
+</div>
+
+<div class="aboutUsCard">
+<div class="thirdrow">
+  <div class="thirdCardbox">
+     <span class="sub-title">ABOUT US</span>
+     <h1>Welcome to Booming Bulls Academy</h1>
+     <p>Booming Bulls Academy is the Best Stock Market Institute that provides you with Best Online Stock Market course in India. It is an initiative for the young generation who are keen on making more, Willing to step forward, and want to be free from financial situations.</p>
+     <p><strong>Generally, trading is considered as a business that is not suitable for everyone, but this is just a hoax that we clear by making you learn about the strategies that can provide a good profit.
+     </strong></p>
+     <div class="knowMoreBtn">
+      <a href="#" class="hbutton"><i class="fa-sharp fa-solid fa-user-large"></i>&nbsp; Know More</a>
+     </div>
+  </div>
+  <div class="fourthCardBox">
+    <img id="forthCardImg" src="https://boomingbulls.com/wp-content/uploads/2021/12/Photo-shape.png" alt="anish">
+      <div class="sub-img">
+          <img src="https://boomingbulls.com/wp-content/uploads/2021/01/Image-02-1-min.png" alt="sub-img">
+      </div>
+  </div>
+</div>
+
+<div class="thirdrow">
+  <div class="fifthCardbox">
+     <img id="fifthCardImg" src="https://boomingbulls.com/wp-content/uploads/2021/06/Booming-Bull-a-min.jpg" alt="booming-bulls-logo">
+  </div>
+  <div class="sixthCardBox">
+    <span class="sub-title">WHY CHOOSE US</span>
+           <h1>We Simplify Trading</h1>
+           <p>Booming Bulls Academy over the period of time has evolved & can help anyone with no experience & no prior knowledge about the markets to become a consistent profitable trader & change his/her financial life after learning from us.</p>
+           <ul class="unorder">
+            <li><span class="span-img">Revision Classes</span> 
+            </li>
+            <li>
+              <span class="span-img">6 Months Support</span>
+            </li>
+            <li><span class="span-img">Trading System</span></li>
+            <li><span class="span-img">Dedicated Managers</span></li>
+           </ul>
+           <div class="knowMoreBtn">
+            <a href="#" class="hbutton"><i class="fa-sharp fa-solid fa-user-large"></i>&nbsp; Enroll Now</a>
+           </div>
+    </div>
+</div>
+
+<div class="number">
+  <div class="numbers-row">
+       <div class="num-col">
+        <div class="wrapper">
+          <img src="https://themes.envytheme.com/ecademy/wp-content/uploads/2020/06/funfacts-shape2.png" alt="net">
+          <div class="wrap">
+              <h3>1.27M</h3>
+              <p>YOUTUBE SUBSCRIBERS</p>
+          </div>
+        </div>
+       </div>
+       <div class="num-col">
+        <div class="wrapper">
+          <img src="https://themes.envytheme.com/ecademy/wp-content/uploads/2020/06/funfacts-shape2.png" alt="net">
+          <div class="wrap">
+              <h3>15,000+</h3>
+              <p>STUDENTS MENTORED</p>
+          </div>
+        </div>
+       </div>
+       <div class="num-col">
+        <div class="wrapper">
+          <img src="https://themes.envytheme.com/ecademy/wp-content/uploads/2020/06/funfacts-shape2.png" alt="net">
+          <div class="wrap">
+              <h3>800+</h3>
+              <p>SESSIONS FINISHED</p>
+          </div>
+        </div>
+       </div>
+       <div class="num-col">
+        <div class="wrapper">
+          <img src="https://themes.envytheme.com/ecademy/wp-content/uploads/2020/06/funfacts-shape2.png" alt="net">
+          <div class="wrap">
+              <h3>4.5</h3>
+              <p>GOOGLE RATING</p>
+          </div>
+        </div>
+       </div>
+  </div>
+</div>
+</div>
+
+<div class="experience">
+  <div class="experience-row">
+    <div class="experience-col1 exp-1"><br>
+      <span class="sub-title">BENEFITS OF ENROLLING IN OUR COURSE</span> 
+      <h1>JOIN THE MOST SIMPLIFIED TRADING COURSE FROM ANISH SINGH THAKUR</h1>  
+      <p>Booming Bulls trading course can provide you to learn about the stock market from the basics, where you get to learn how does a market operates to how can you earn simply by putting all the logical thinking into the action. Our simplified strategies will help you to earn and stand financially independent.</p>
+        <div class="exp-list">
+          <ul class="exp-ul">
+            <li><span><i class="fa-solid fa-check" ></i></span><strong id="str">6 months Membership in WhatsApp Important updates Group</strong></li>
+            <li><span><i class="fa-solid fa-check" ></i></span><strong> Revision Classes</strong></li>
+            <li><span><i class="fa-solid fa-check" ></i></span><strong> 5 Star Trading Setup</strong></li>
+            <li><span><i class="fa-solid fa-check" ></i></span><strong>Booming Bulls Facebook Stock Selection Group</strong></li>
+            <li><span><i class="fa-solid fa-check" ></i></span><strong>Trading System Development</strong></li>
+            <li><span><i class="fa-solid fa-check" ></i></span><strong>Trading Psychology</strong></li>
+            <li><span><i class="fa-solid fa-check" ></i></span><strong>Ultimate Trader's Checklist</strong></li>      
+          </ul>
+        </div>
+        <div class="knowMoreBtn">
+            <a href="#" class="hbutton"><i class="fa-sharp fa-solid fa-user-large"></i>&nbsp; Get Started Now</a>
+        </div>
+      </div>
+    <div class="experience-col2 exp-2">
+      <div class="red-area"></div>
+      <div class="anish-pic"></div>
+      <div class="trainer">
+        <h2>India's No. 1 Stock Market Trainer</h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="event-headings">
+  <h5>LATEST EVENTS</h5>
+  <h2>Upcoming Events</h2>
+</div>
+<div class="events">
+      <div class="event-box-row">
+          <div class="event-date">
+             <p>
+               <span>January 10 @ 07:30 pm</span>
+            </p>
+          </div>
+          <div class="event-launch">
+             <a href="#">Weekday Batch Launch</a>
+             <div class="event-subline"><span>Online Classes</span></div>
+             <span id="p">You will learn all these things :  Basics of Stock Market Fundamental Analysis Basics Types of Traders & Trading styles Candlestick Patterns Candle Sticks Patterns Advanced Wick vs Body Importance.</span>
+          </div>
+          <div class="event-pic">
+              <img src="https://boomingbulls.com/wp-content/uploads/2020/09/Cover-01-min-768x403.jpg" alt="event">
+          </div>
+      </div>
+</div>
+
+<!-- <div class="events">
+  <div class="event-box-row">
+    <div class="event-box">
+      <h5>LATEST EVENTS</h5>
+      <h2>Upcoming Events</h2>
+      <div class="event-date"><span>January 10 @ <br>07:30 pm</span></div>
+      <div class="event-launch">
+        <a href="#">Weekday Batch Launch</a>
+        <div class="event-subline"><span>Online Classes</span></div>
+        <span id="p">You will learn all these things :  Basics of Stock Market Fundamental Analysis Basics Types of Traders & Trading styles Candlestick Patterns Candle Sticks Patterns Advanced Wick vs Body Importance.</span>
+      </div>
+      <div class="event-pic">
+        <img src="https://boomingbulls.com/wp-content/uploads/2020/09/Cover-01-min-768x403.jpg" alt="event">
+      </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<div class="apply">
+  <div class="apply-row">
+    <div class="apply-box">
+       <span class="sub-title">INFORMATION</span>
+       <h2>How to Apply?</h2>
+       <ul>
+        <li class="apply-list">
+          <div class="apply-icon"><i class="fa-solid fa-check-to-slot"></i></div>
+          <h3>Download & Read Brochure</h3>
+          <p>Download our <a class="apply-a">Brochure</a> , Read it carefully. All the answers to your questions are provided in the brochure.</p>
+        </li>
+        <li class="apply-list">
+          <div class="apply-icon"><i class="fa-solid fa-id-card"></i></div>
+          <h3>Register & Enrollment</h3>
+          <p>Complete the registration process by paying the amount of registration, and take a screenshot of the successful payment.</p>
+        </li>
+        <li class="apply-list">
+          <div class="apply-icon"><i class="fa-solid fa-credit-card"></i></div>
+          <h3>Confirmation</h3>
+          <p>Send the screenshot of successful payment on WhatsApp <a class="apply-a">(+91-8130245100)</a></p>
+        </li>
+        <li class="apply-list">
+          <div class="apply-icon"><i class="fa-solid fa-handshake-angle"></i></div>
+          <h3>Verification</h3>
+          <p>As soon as your payment is verified, you will receive details of your assigned Relationship Manager</p>
+        </li>
+       </ul>
+    </div>
+    <div class="apply-img "></div>
+  </div>
+</div>
+
+<div class="brochure">
+  <div class="brochure-wrap">
+    <div class="download-icon"><i class="fa-sharp fa-solid fa-file-arrow-down" style="font-size: 50px; color: rgb(85, 81, 81);"></i></div>
+    <div class="head3"><h3>Download Brochure</h3></div>
+    <div class="brochure-info">Click on the button below to download Brochure and get a call back from our Academic Counselor</div>
+    <div class="brochure-link"><a class="apply-a" href="#">Download Now</a></div>
+    <div class="ribbon">HURRY UP !!</div>
+  </div>
+</div>
+
+<div class="pace-container">
+  <div class="pace">
+     <div class="pace-subtitle">GO AT YOUR OWN PACE</div>
+     <div class="pace-h2"><h2>Our Popular Courses</h2></div>
+     <p>Explore all of our courses and pick your suitable ones to enroll and start learning with us! We ensure that you will never regret it!</p>
+  </div>
+</div>
+
+<div class="mycourses">
+  <div class="mycourse-row">
+    <div class="my-course">
+       <div class="course-type1-pic">
+           <div class="course-price"><span>₹59,000.00</span></div>
+       </div>
+       <div class="course-information">
+       <div class="course-author">
+           <img src="https://boomingbulls.com/wp-content/litespeed/avatar/06231f11de6a416d965e7a6bd08ae4e8.jpg?ver=1672648427" alt="logo" style="height: 40px; width: 40px; border-radius: 50%; box-shadow: none;">
+           <a href="#">Booming Bulls Academy</a>
+       </div>
+       <a href="#" id="course-off">Elite Traders Offline Mentorship Program</a>
+       <p  id="course-off-p">You can attend our 3 days Money-Back Guarantee Class at just ₹5,000. You can choose to continue classes or simply take a refund. In the era of unlimited data connections</p>
+       <div class="footwrap">
+           <ul class="course-footer">
+             <li><i class="fa-solid fa-calendar-days" style="color: #FE4A55; font-size: 18px;"></i> &nbsp; 43</li>
+             <li><i class="fa-solid fa-users" style="color: #FE4A55; font-size: 18px;"></i>  &nbsp; 449 Students</li>
+           </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="my-course">
+      <div class="course-type2-pic">
+        <div class="course-price"><span>₹26,541.00</span></div>
+      </div>
+      <div class="course-information">
+        <div class="course-author">
+            <img src="https://boomingbulls.com/wp-content/litespeed/avatar/06231f11de6a416d965e7a6bd08ae4e8.jpg?ver=1672648427" alt="logo" style="height: 40px; width: 40px; border-radius: 50%; box-shadow: none;">
+            <a href="#">Booming Bulls Academy</a>
+        </div>
+         <a href="#" id="course-off">Elite Traders Live Mentorship Program</a>
+         <p id="course-off-p">You can attend our 3 days Money-Back Guarantee Class at just ₹3,000. You can choose to continue classes or simply take a refund. In the era of unlimited data connections</p>
+        <div class="footwrap">
+           <ul class="course-footer">
+               <li><i class="fa-solid fa-calendar-days" style="color: #FE4A55; font-size: 18px;"></i> &nbsp; 43</li>
+               <li><i class="fa-solid fa-users" style="color: #FE4A55; font-size: 18px;"></i>  &nbsp; 13826 Students</li>
+           </ul>
+        </div>
+     </div>
+  </div>
+ </div>
+</div>
+
+<div class="contactus-container">
+  <div class="contact-row">
+      <div class="contact-details">
+        <span>CONTACT DETAILS</span>
+        <h2>Get In Touch</h2>
+        <p>Have any query ? or want to know more ?<br>
+          Contact us and we will be happy to help.</p>
+          <!-- <div class="contact-info"> -->
+             <ul>
+                  <li class="contact-list">
+                    <div class="contact-icon">
+                      <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <h3>Our Address</h3>
+                    <p>A547, Urbtech Trade Center, Sector 132, Noida, 201304</p>
+                  </li>
+                  <li class="contact-list">
+                      <div class="contact-icon">
+                          <i class="fa-solid fa-calendar"></i>
+                      </div>
+                      <h3>E-mail</h3>
+                      <p>General Enquiry : 
+                          <a href="#">info@boomingbulls.com</a>  <br>
+                         business Enquiry : 
+                         <a href="#">deals@boomingbulls.com</a>
+                      </p>
+                    </li>
+                    <li class="contact-list">
+                      <div class="contact-icon">
+                          <i class="fa-solid fa-phone-volume"></i>
+                      </div>
+                      <h3>Contact</h3>
+                      <p>Mobile: +91 81302-45100</p>
+                    </li>
+                    <li class="contact-list">
+                      <div class="contact-icon">
+                          <i class="fa-solid fa-clock"></i>
+                      </div>
+                      <h3>Hours Of Operation</h3>
+                      <p>Everyday: 10:00 AM to 7:00 PM IST</p>
+                    </li>
+             </ul>
+      </div>
+      <div class="contact-form">
+          <div class="contact-dabba">
+              <div class="formbox">
+                  <h2>Ready to Get Started?</h2>
+                  <p>Fill Up The Form to get a Call from our Academic Counselor & to Download our Brochure*</p>
+              </div>
+               <div class="box">
+                   <form action="#">
+                       <input type="text" placeholder="Your name" required><br>
+                       <input type="text" placeholder="Your e-mail adress" required><br>
+                       <input type="text" placeholder="Your phone number" required><br>
+                       <input type="text" placeholder="Your city" required><br>
+                      <input type="text" placeholder="Your query" required><br>
+                   </form>
+                     
+                     <button class="button" type="submit">
+                         Send Message
+                     </button>
+               </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+<main>
+  <!-- <section class="posts">
+    <div class="postrow">
+       <div class="postitem">
+          <h2>Our Recest Posts</h2>
+              <div class="carousel"data-flickity='{ "wrapAround": true }'>
+                <div class="carousel-cell"><a href="https://www.instagram.com/p/Clkl2IaDFUi/?utm_source=ig_web_copy_link"><img id="post-img"  src="/clinc/post images/WhatsApp Image 1.jpeg" alt="post"></a></div>
+                <div class="carousel-cell"><a href="https://www.instagram.com/p/ClbQ3E3SjpF/?utm_source=ig_web_copy_link"><img id="post-img"  src="/clinc/post images/WhatsApp Image 2.jpeg" alt="post" ></a></div>
+                <div class="carousel-cell"><a href="https://www.instagram.com/p/Cln6Ec_Smzw/?utm_source=ig_web_copy_link"><img id="post-img"  src="/clinc/post images/WhatsApp Image 2022-12-01 at 8.43.09 PM.jpeg" alt="post"></a></div>
+                <div class="carousel-cell"><a href="https://www.instagram.com/p/CltJnaOj6Pz/?utm_source=ig_web_copy_link"><img id="post-img" 
+                 src="/clinc/post images/4th post.jpeg" alt="post"></a></div>
+                <div class="carousel-cell"><a href="https://www.instagram.com/p/Cl2nQPuDghg/?utm_source=ig_web_copy_link"><img id="post-img"  src="/clinc/post images/5th post.jpeg" alt=""></a></div>
+              </div>
+       </div>
+      <div class="post-item">
+        <h1 class="chart-heading">Live Charts</h1>
+         <div class="ind">
+           <img class="main-chart-img" src="https://s3-symbol-logo.tradingview.com/financial--big.svg" alt="nifty">
+             <div class="charthead">
+              <h1>NIFTY 50 INDEX</h1><br>
+               <span class="span">NIFTY &nbsp; &nbsp;
+                <img src="https://flagcdn.com/w20/in.png" srcset="https://flagcdn.com/w40/in.png 2x" width="30" alt="India" style="border-radius: 50% ;">
+                NSE</span> 
+              </div>
+          </div>
+           <div class="ind">
+            <img class="main-chart-img" src="https://s3-symbol-logo.tradingview.com/financial--big.svg" alt="nifty">
+              <div class="charthead"><h1>NIFTY BANK</h1><br>
+                <span class="span">BANKNIFTY &nbsp; &nbsp;
+                 <img src="https://flagcdn.com/w20/in.png" srcset="https://flagcdn.com/w40/in.png 2x" width="30" alt="India" style="border-radius: 50% ;">
+                 NSE</span> 
+               </div>
+           </div>
+           <div class="ind">
+            <img class="main-chart-img" src="https://s3-symbol-logo.tradingview.com/financial--big.svg" alt="nifty">
+              <div class="charthead"><h1>US 100 CFD</h1><br>
+                <span class="span">NASDAQ &nbsp; &nbsp;
+                 <img src="https://flagcdn.com/w20/in.png" srcset="https://flagcdn.com/w40/in.png 2x" width="30" alt="India" style="border-radius: 50% ;">
+                 SKILLING</span> 
+               </div>
+           </div>
+           <div class="ind">
+            <img class="main-chart-img" src="https://s3-symbol-logo.tradingview.com/financial--big.svg" alt="nifty">
+              <div class="charthead"><h1>S&P 500 INDEX</h1><br>
+                <span class="span">SPX &nbsp; &nbsp;
+                 <img src="https://flagcdn.com/w20/in.png" srcset="https://flagcdn.com/w40/in.png 2x" width="30" alt="India" style="border-radius: 50% ;">
+                 SP (Derived Data)</span> 
+               </div>
+           </div>
+           <div class="ind">
+            <img class="main-chart-img" src="https://s3-symbol-logo.tradingview.com/financial--big.svg" alt="nifty">
+              <div class="charthead"><h1>BITCOIN/TETHERUS</h1><Tbr>
+                <span class="span">BTCUSDT &nbsp; &nbsp;
+                 <img src="https://flagcdn.com/w20/in.png" srcset="https://flagcdn.com/w40/in.png 2x" width="30" alt="India" style="border-radius: 50% ;">
+                 BINANCE</span> 
+               </div>
+           </div>
+
+        </div> 
+      </div>
+   </section>
+  
+    <div class="review-box"> 
+      <img class="image" src="h.jpg" alt="" width="1000" height="500">
+        <h2 class="h2">Course Review</h2>
+          <p class="firstpara">
+            As with most things, it's best to start with the basics, and with finance, that couldn't be The <br>course “Finance for Non-Financial Professionals” on CLINC is a great starting point for those that want to<br> dip their toes in but not necessarily go further than that. 
+          </p>
+            <p class="secondpara">The introductory but informative seven-hour course covers everything from financial ratios  <br>
+            to valuation methods and basic economic principles.</p> 
+            <p class="thirdpara">The core outcome of the course is to help learners understand how financial decisions<br>
+            can significantly influence your personal and professional life, the place that most <br>
+            financial professionals begin. </p> 
+            <aside>
+            <p id="ad">this section is reserved for the ad <br>
+               only ads will be shown here <br>
+              if you want to advertise your brand <br>
+              or product please contact us ! </p>
+          </aside>
+        </div>
+
+    <section class="forstudents">
+        <div class="row">
+           <div class="item">
+              <div class="carouse2" data-flickity='{ "autoPlay": true }'>
+                  <div class="carousel-cell2"><img id="book-img" src="https://boomingbulls.com/wp-content/uploads/2020/10/51IMSNwYxrL._SX331_BO1204203200_.jpg.webp" alt="book"></div>
+                  <div class="carousel-cell2"><img id="book-img" src="https://boomingbulls.com/wp-content/uploads/2020/10/51rC1PZVJjL._SX328_BO1204203200_.jpg.webp" alt="book"></div>
+                  <div class="carousel-cell2"><img src="https://boomingbulls.com/wp-content/uploads/2020/10/51zIH54q13L._SX346_BO1204203200_.jpg.webp" id="book-img" alt="book"></div>
+                  <div class="carousel-cell2"><img src="https://boomingbulls.com/wp-content/uploads/2020/10/51nmPA3HyfL.jpg.webp" id="book-img" alt="book"></div>
+                  <div class="carousel-cell2"><img src="https://boomingbulls.com/wp-content/uploads/2020/10/51erDf23d9L._SX303_BO1204203200_.jpg.webp" id="book-img" alt="book"></div>
+                  <div class="carousel-cell2"><img src="https://boomingbulls.com/wp-content/uploads/2020/10/51lKgRQh1XL._SX346_BO1204203200_.jpg.webp" id="book-img" alt="book"></div>
+                  <div class="carousel-cell2"><img src="https://boomingbulls.com/wp-content/uploads/2020/10/51isUisgadL._SX331_BO1204203200_.jpg.webp" id="book-img" alt="book"></div>
+                  <div class="carousel-cell2"><img src="https://boomingbulls.com/wp-content/uploads/2020/10/51SxL2huHrL._SX336_BO1204203200_.jpg.webp" id="book-img" alt="book"></div>
+                  <div class="carousel-cell2"><img src="https://boomingbulls.com/wp-content/uploads/2020/10/51pJPs1sMHL._SX320_BO1204203200_.jpg.webp" id="book-img" alt="book"></div>
+                  <div class="carousel-cell2"><img src="https://boomingbulls.com/wp-content/uploads/2020/10/51thwSMFWIL._SX337_BO1204203200_.jpg.webp" id="book-img" alt="book"></div>
+              </div>
+              <div id="hq"><h2>Books</h2></div>
+          </div>
+          <div class="item" id="middle-carousel">
+            <div class="carouse3" data-flickity='{ "autoPlay": true }'>
+                <div class="carousel-cell3"><img src="https://boomingbulls.com/wp-content/uploads/2022/07/Delhi-768x768.png"  id="center-img" alt="book"></div>
+                <div class="carousel-cell3"><img src="https://boomingbulls.com/wp-content/uploads/2022/07/Pune.png"  id="center-img" alt="book"></div>
+                <div class="carousel-cell3"><img src="https://boomingbulls.com/wp-content/uploads/2022/07/HYD.png"  id="center-img" alt="book"></div>
+                <div class="carousel-cell3"><img src="https://boomingbulls.com/wp-content/uploads/2022/09/Bengaluru-2048x2048.png"  id="center-img" alt="book"></div>
+                <div class="carousel-cell3"><img src="https://boomingbulls.com/wp-content/uploads/2022/10/Ahmedabad-768x768.png"  id="center-img"alt="book"></div>
+                <div class="carousel-cell3"><img src="https://boomingbulls.com/wp-content/uploads/2022/09/Surat-.png"  id="center-img"alt="book"></div>
+                <div class="carousel-cell3"><img src="https://boomingbulls.com/wp-content/uploads/2022/10/mumbai.jpeg"  id="center-img"alt="book"></div>
+                <div class="carousel-cell3"><img src="https://boomingbulls.com/wp-content/uploads/2022/11/Gurgaon-new-2048x2048.png"  id="center-img"alt="book"></div>
+            </div>
+            <div id="hq"><h2>Offline Centers</h2></div>
+          </div>
+        <div class="item" >
+          <div class="carouse2" data-flickity='{ "autoPlay": true }'>
+              <div class="carousel-cell2"><img src="https://boomingbulls.com/wp-content/uploads/2022/05/Candlestick-Pattern-768x1086.jpg" id="book-img" alt="book"></div>
+              <div class="carousel-cell2"><img src="https://boomingbulls.com/wp-content/uploads/2022/05/Trading-Checklist-Light-768x1086.jpg" id="book-img" alt="book"></div>
+              <div class="carousel-cell2"><img src="https://boomingbulls.com/wp-content/uploads/2022/05/Chart-Pattern-768x1086.jpg" id="book-img" alt="book"></div>
+              <div class="carousel-cell2"><img src="https://boomingbulls.com/wp-content/uploads/2022/05/Candlestick-Pattern-Light-768x1086.jpg" id="book-img" alt="book"></div>
+              <div class="carousel-cell2"><img src="https://boomingbulls.com/wp-content/uploads/2022/05/Trading-Checklist-768x1086.jpg" id="book-img" alt="book"></div>
+              <div class="carousel-cell2"><img src="https://boomingbulls.com/wp-content/uploads/2022/05/Chart-Pattern-Light-768x1086.jpg" id="book-img" alt="book"></div>
+          </div>
+          <div id="hq"><h2>Chart Sheets</h2></div>
+      </div>
+        </div>
+    </section>
+
+      <div class="founder">
+        <img id="fonder-img" src="/clinc/swapnil.jpeg" alt="founder-img">
+        <h1 class="founderh1">SWAPNIL NICHAL</h1>
+        <p class="founder-p">Founder and CEO of Clinc.in</p>
+      </div> -->
+
+    </main>  
+    
+    <footer>
+      <div class="footer-container">
+        <div class="footer-row">
+            <div class="footer-section-box">
+               <h2>Booming Bulls Academy</h2>
+            </div>
+            <div class="footer-section-box">
+              <h3>Explore</h3>
+              <ul class="foot-ul">
+                <li class="foot-li"><a href="#">About Us</a></li>
+                <li class="foot-li"><a href="#">Blogs</a></li>
+                <li class="foot-li"><a href="#">Important Links</a></li>
+                <li class="foot-li"><a href="#">Courses</a></li>
+                <li class="foot-li"><a href="#">Careers</a></li>
+              </ul>
+            </div>
+            <div class="footer-section-box">
+              <h3>Resourses</h3>
+              <ul class="foot-ul">
+                <li class="foot-li"><a href="#">Testimonials</a></li>
+                <li class="foot-li"><a href="#">Upcoming Events</a></li>
+                <li class="foot-li"><a href="refund.html">Refund Policy</a></li>
+              </ul>
+            </div>
+            <div class="footer-section-box">
+              <h3>Address</h3>
+              <ul class="foot-lastul ">
+                <li class="foot-li"><i class="fa-solid fa-location-dot" style="color: white;  font-size: 15px;"></i><a href="#">&nbsp; A5A7 Urbtech Trade Center, Sector 132, Noida 201304 </a></li>
+                <li class="foot-li"><i class="fa-solid fa-phone-volume" style="color: white; font-size: 15px;"></i><a href="#">&nbsp; +91 81302-45100 </a></li>
+                <li class="foot-li"><i class="fa-solid fa-envelope" style="color: white; font-size: 15px;"></i><a href="#">&nbsp; info@boomingbulls.com </a></li>
+              </ul>
+            </div>
+            <div class="footer-section-box">
+               <img src="https://images.dmca.com/Badges/dmca_protected_26_120.png?ID=8e760322-a55c-4a76-bfc1-09ee9be99457" alt="dmca">
+            </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-row">
+           <div class="footer-bot-box"><p>&copy;2019-2022 Booming Bulls. All rights reserved.</p>
+           </div>
+           <div class="footer-bot-box x1"><a href="privacypolicy.html">Terms & Conditions</a></div>
+        </div>
+      </div>
+    </div>
+    </footer>
+
+    <!-- <footer>
+        <a href="#">FAQ</a>
+        <a href="/clinc/contact.html">Contact Us</a>
+        <a href="https://www.termsofusegenerator.net/live.php?token=6fgHkbRUfbOv9swb0PU3XlUN70sWpzkp">Terms of Use</a>
+        <a href="/clinc/privacypolicy.html">Privacy Policy</a>
+        <a href="refund.html" >Refund Policy</a>
+        <a href="#">&copy; 2022 | CLINC</a>
+    </footer> -->
+
+    <!-- flickity javascript plugin link  -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <script>
+      let aboutusContent = document.getElementById('add-aboutus');
+      let offCourseContent = document.getElementById('add-offCourse');
+
+      function addAboutUsInfo(e)
+      {
+        let aboutusUl = document.createElement('ul')
+  
+        if (aboutusContent.childElementCount <= 0)
+         {
+            aboutusUl.innerHTML = `
+            <li class="sub-li"><a class="nav-link" href="#">About Booming Bulls</a></li>
+            <li class="sub-li"><a class="nav-link" href="#">Testimonials</a></li>
+            <li class="sub-li"><a class="nav-link" href="#">FAQ</a></li>`
+             aboutusContent.appendChild(aboutusUl); 
+             aboutusUl.className = "usul" ;
+         }
+       else if (aboutusContent.childElementCount >= 1)
+          {
+            aboutusContent.innerHTML = '' ;
+          }
+      }
+
+      function addOfflineCourseInfo(e)
+      {
+        let offCourseUl = document.createElement('ul')
+  
+        if (offCourseContent.childElementCount <= 0)
+         {
+          offCourseUl.innerHTML = `
+          <li class="sub-li"><a class="nav-link" href="#">Delhi</a></li>
+          <li class="sub-li"><a class="nav-link" href="#">Pune</a></li>
+          <li class="sub-li"><a class="nav-link" href="#">Hyderabad</a></li>
+          <li class="sub-li"><a class="nav-link" href="#">Bengaluru</a></li>
+          <li class="sub-li"><a class="nav-link" href="#">ahemadabad</a></li>
+          <li class="sub-li"><a class="nav-link" href="#">Surat</a></li>
+          <li class="sub-li"><a class="nav-link" href="#">Mumbai</a></li>
+          <li class="sub-li"><a class="nav-link" href="#">Gurgaon</a></li>`
+            offCourseContent.appendChild(offCourseUl); 
+            offCourseUl.className = "offul" ;
+         }
+       else if (offCourseContent.childElementCount >= 1)
+          {
+            offCourseContent.innerHTML = '' ;
+          }
+      }
+
+           
+         
+    </script>
+</body>
+</html>
